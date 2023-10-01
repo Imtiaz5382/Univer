@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/752fe87566.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+     <nav>
+    <a href="#"><img src="eduford_img/logo.png" alt=""></a>
+    <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="toggleMenu()"></i>
+    <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">COURSE</a></li>
+    <li><a href="#">BLOG</a></li>
+    <li><a href="#">CONTACT</a></li>
+    </ul>
+    </div>
+    <i class="fa fa-bars" onclick="toggleMenu()"></i>
+    </nav>
+    <h1>About US</h1>
+    </section>
+    <section class="about-us">
+    <div class="row">
+    <div class="about-col">
+    <h1>We are the Worlds Largest University</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur modi neque aspernatur praesentium sint cumque eveniet veritatis, accusamus dolores! Tempora delectus laborum numquam expedita veritatis impedit reprehenderit alias mollitia doloremque!</p>
+    <a href="#" class="button-01" style="color: black;border: 1px solid black; outline: none;">EXPLORE NOW</a>
+    </div>
+    <div class="about-col">
+   <img src="eduford_img/about.jpg" alt="">
+    </div>
+    </div>
+    </section>
+    <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, incidunt unde vitae <br>fugit doloribus magnam ab nam iusto excepturi voluptates hic libero exercitationem </p>
+    <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-youtube"></i>
+    </div>
+    <p>Made By <i class="fa fa-heart-o"></i> Imtiaz Mahmud Sobuj</p>
+    </section>
+  
+    <!-- Javascript For Toggle Menu -->
+    <script>
+    var navLinks = document.getElementById("navLinks");
+    function toggleMenu() {
+    if (navLinks.style.right === "0px" || navLinks.style.right === "") {
+             navLinks.style.right = "-200px";
+            } else {
+            navLinks.style.right = "0px";
+            }
+        }
+    </script>
+    
+</body>
+</html>
